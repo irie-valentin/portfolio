@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio de Valentin IRIE</title>
+  <style>
+    /* 🎨 Thème de couleurs contrastées */
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f9;
+      color: #2c3e50;
+    }
+    header {
+      background-color: #1a1a2e;
+      color: #eaeaea;
+      text-align: center;
+      padding: 2rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      background-color: #16213e;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+    nav a {
+      color: #eaeaea;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #00a8ff;
+    }
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      border-bottom: 2px solid #00a8ff;
+      padding-bottom: 0.5rem;
+      color: #16213e;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #00a8ff;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background-color: #0077b6;
+    }
+    .gallery img {
+      max-width: 250px;
+      margin: 10px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #1a1a2e;
+      color: #eaeaea;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Valentin IRIE</h1>
+    <p>Administrateur Systèmes & Réseaux</p>
+  </header>
+
+  <nav>
+    <a href="#about">À propos</a>
+    <a href="#experience">Expériences</a>
+    <a href="#projects">Projets</a>
+    <a href="#gallery">Galerie</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>À propos</h2>
+      <p>Je suis en formation "Administrateur d’infrastructures sécurisées" chez Studi, 
+         avec pour objectif d’obtenir la certification RNCP. Passionné par la sécurité réseau, 
+         la virtualisation et l’automatisation.</p>
+      <!-- Bouton pour télécharger le CV -->
+      <a href="docs/CV-ValentinDupont.pdf" class="btn" download>Télécharger mon CV</a>
+    </section>
+
+    <section id="experience">
+      <h2>Expériences</h2>
+      <ul>
+        <li>
+          Projet VPN site-to-site (pfSense + VirtualBox)  
+          📄 <a href="docs/projet-vpn.pdf" target="_blank">Voir le PDF</a>
+        </li>
+        <li>
+          LAN sécurisé familial (OPNsense + VLAN)  
+          📄 <a href="docs/lan-securise.pdf" target="_blank">Voir le PDF</a>
+        </li>
+      </ul>
+      <!-- Exemple d'intégration vidéo -->
+      <h3>Vidéo de démonstration</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" 
+              title="Présentation projet VPN" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="projects">
+      <h2>Projets</h2>
+      <p>• Automatisation avec Ansible<br>
+         • Déploiement de règles firewall<br>
+         • Portfolio GitHub Pages</p>
+    </section>
+
+    <section id="gallery">
+      <h2>Galerie</h2>
+      <div class="gallery">
+        <img src="images/vpn-lab.png" alt="Capture du labo VPN">
+        <img src="images/firewall-rules.png" alt="Capture des règles firewall">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>📧 Email : ibt.valentin@yahoo.com<br>
+         🔗 LinkedIn : <a href="https://linkedin.com/in/ibtvalentin" target="_blank">linkedin.com/in/ibtvalentin</a><br>
+         💻 GitHub : <a href="https://github.com/irie-valentin" target="_blank">github.com/valentin-dupont</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Valentin IRIE - Portfolio</p>
+  </footer>
+</body>
+</html>
