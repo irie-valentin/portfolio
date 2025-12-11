@@ -72,6 +72,21 @@
 <body>
   <header>
     <img src="C:\Users\les invités\Downloads\photo de valentin.jpeg" alt="Photo de IRIE Valentin">
+Add-Type -AssemblyName System.Windows.Forms
+Add-Type -AssemblyName System.Drawing
+
+$form = New-Object Windows.Forms.Form
+$form.Text = "Affichage d'une photo"
+$form.Width = 600
+$form.Height = 400
+
+$pictureBox = New-Object Windows.Forms.PictureBox
+$pictureBox.Image = [System.Drawing.Image]::FromFile("C:\Users\les invités\Downloads\photo de valentin.jpeg")
+$pictureBox.SizeMode = "StretchImage"
+$pictureBox.Dock = "Fill"
+
+$form.Controls.Add($pictureBox)
+$form.ShowDialog()
     <h1>IRIE Valentin</h1>
     <p>Administrateur Réseau & Système | Étudiant en infrastructures sécurisées</p>
   </header>
