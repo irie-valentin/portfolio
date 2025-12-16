@@ -3,209 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - IRIE Valentin</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f9f9f9; /* fond clair */
-      color: #333;
-    }
-    header {
-      background: linear-gradient(135deg, #4facfe, #00f2fe); /* dégradé bleu clair */
-      color: #fff;
-      padding: 30px;
-      display: flex;              /* texte + photo côte à côte */
-      justify-content: space-between;
-      align-items: center;
-    }
-    header .header-text {
-      text-align: left;
-    }
-    header img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 3px solid #fff;
-    }
-    nav {
-      background: #e6f0fa; /* bleu très pâle */
-      padding: 15px;
-      text-align: center;
-    }
-    nav a {
-      color: #0077b6; /* bleu vif */
-      margin: 0 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .card {
-      background: #fff;
-      padding: 25px;
-      margin-bottom: 25px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .skill {
-      margin-bottom: 15px;
-    }
-    .skill-name {
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    .progress-bar {
-      background-color: #e0e0e0;
-      border-radius: 10px;
-      height: 25px;
-      width: 100%;
-    }
-    .progress {
-      background-color: #0077b6; /* bleu vif */
-      height: 100%;
-      border-radius: 10px;
-      text-align: center;
-      color: #fff;
-      font-weight: bold;
-    }
-    .btn {
-      display: inline-block;
-      padding: 8px 14px;
-      background: #0077b6; /* bleu vif */
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-      font-size: 0.9em;
-    }
-    .btn:hover {
-      background: #0096c7; /* bleu plus clair au survol */
-    }
-    footer {
-      background: #e6f0fa;
-      color: #0077b6;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-    }
-  </style>
+  <title>Portfolio - Valentin IRIE</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="header-text">
-      <h1>IRIE Valentin</h1>
-      <p>Administrateur Réseau & Système | Étudiant en infrastructures sécurisées</p>
-    </div>
-    <img src="photo-valentin.jpg" alt="Photo de IRIE Valentin">
-  </header>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img src="profil.jpg" alt="Photo de Valentin IRIE" class="profil">
+      <h2>Valentin IRIE</h2>
+      <p>Pentesteur en devenir | Administrateur Systèmes & Réseaux</p>
+      <nav>
+        <ul>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#formation">Formation</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#skills">Compétences</a>
-    <a href="#projects">Projets</a>
-    <a href="#diplomas">Diplômes</a>
-    <a href="#contact">Contact</a>
-    <a href="pdf/cv.pdf" class="btn" download>CV PDF</a>
-  </nav>
+    <!-- Contenu principal -->
+    <main class="content">
+      <section id="apropos">
+        <h1>À propos</h1>
+        <p>Je suis en formation AIS chez Studi, diplômé TSSR, et je vise à devenir pentesteur en cybersécurité.</p>
+      </section>
 
-  <section id="about">
-    <div class="card">
-      <h2>À propos de moi</h2>
-      <p>Je suis passionné par l’administration système et réseau, avec une expertise en Linux, Windows, virtualisation et sécurité. Actuellement en formation pour obtenir la certification RNCP Administrateur d’infrastructures sécurisées.</p>
-    </div>
-  </section>
+      <section id="competences">
+        <h1>Compétences</h1>
+        <ul>
+          <li>Administration systèmes et réseaux (Windows, Linux)</li>
+          <li>Virtualisation et sécurité</li>
+          <li>Automatisation (Ansible, PowerShell, Bash)</li>
+          <li>Gestion d’infrastructures sécurisées</li>
+          <li>VPN, pfSense, OPNsense</li>
+        </ul>
+      </section>
 
-  <section id="skills">
-    <div class="card">
-      <h2>Compétences</h2>
-      <div class="skill">
-        <div class="skill-name">Linux (Debian, Ubuntu)</div>
-        <div class="progress-bar"><div class="progress" style="width:85%;">85%</div></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">Windows Server & Active Directory</div>
-        <div class="progress-bar"><div class="progress" style="width:75%;">75%</div></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">Virtualisation (VirtualBox, VMware)</div>
-        <div class="progress-bar"><div class="progress" style="width:70%;">70%</div></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">Sécurité réseau (pfSense, OPNsense)</div>
-        <div class="progress-bar"><div class="progress" style="width:80%;">80%</div></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">Automatisation (Ansible, PowerShell, Bash)</div>
-        <div class="progress-bar"><div class="progress" style="width:65%;">65%</div></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">VPN site-to-site & nomade</div>
-        <div class="progress-bar"><div class="progress" style="width:75%;">75%</div></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">Gestion de parc informatique</div>
-        <div class="progress-bar"><div class="progress" style="width:70%;">70%</div></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">Documentation & procédures</div>
-        <div class="progress-bar"><div class="progress" style="width:90%;">90%</div></div>
-      </div>
-    </div>
-  </section>
+      <section id="projets">
+        <h1>Projets</h1>
+        <ul>
+          <li>VPN nommage et site-à-site</li>
+          <li>Windows Server & Active Directory</li>
+          <li>rConfig pour gestion de configuration réseau</li>
+          <li>pfSense firewall et VPN</li>
+          <li>Automatisation avec Ansible</li>
+        </ul>
+      </section>
 
-  <section id="projects">
-    <div class="card">
-      <h2>Projets réalisés</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>VPN nomade</h3>
-          <p>Sécurisation des connexions distantes pour utilisateurs mobiles.</p>
-          <a href="pdf/vpn-nomade.pdf" class="btn">Voir PDF</a>
-        </div>
-        <div class="project-card">
-          <h3>VPN site-à-site avec pfSense</h3>
-          <p>Interconnexion sécurisée entre deux sites via pfSense.</p>
-          <a href="pdf/vpn-site-a-site.pdf" class="btn">Voir PDF</a>
-        </div>
-        <div class="project-card">
-          <h3>Déploiement pfSense</h3>
-          <p>Mise en place et gestion d’un pare-feu pfSense.</p>
-          <a href="pdf/pfsense.pdf" class="btn">Voir PDF</a>
-        </div>
-        <div class="project-card">
-          <h3>Supervision réseau avec Gbarix</h3>
-          <p>Surveillance et analyse des performances réseau.</p>
-          <a href="pdf/gbarix.pdf" class="btn">Voir PDF</a>
-        </div>
-        <div class="project-card">
-          <h3>Gestion de configuration avec rConfig</h3>
-          <p>Automatisation et gestion des configurations réseau.</p>
-          <a href="pdf/rconfig.pdf" class="btn">Voir PDF</a>
-        </div>
-        <div class="project-card">
-          <h3>Gestion de parc avec GLPI</h3>
-          <p>Inventaire et gestion des équipements informatiques.</p>
-          <a href="pdf/glpi.pdf" class="btn">Voir PDF</a>
-        </div>
-      </div>
-    </div>
-  </section>
+      <section id="formation">
+        <h1>Formation</h1>
+        <p>🎓 AIS (Administrateur d’Infrastructures Sécurisées) - Studi</p>
+        <p>🎓 Diplôme TSSR (Technicien Supérieur Systèmes & Réseaux)</p>
+      </section>
 
-  <section id="diplomas">
-    <div class="card">
-      <h2>Diplômes obtenus</h2>
-      <ul>
-        <li>DEUG2 en Physique-Chimie <a href="#" class="btn">Voir diplôme</a></li>
-        <li>Diplôme de Technicien Supérieur Systèmes & Réseaux <a href="#" class="btn">Voir diplôme</a></li>
-      </ul>
-    </div>
-  </section>
+      <section id="certifications">
+        <h1>Certifications</h1>
+        <p>En cours d’acquisition (Cybersécurité, Pentesting...)</p>
+      </section>
 
-  <section id="contact">
-    <div class="card">
-      <h2>Contact</h2>
-      <p>📧 Email : <a href="mailto:ibt.valentin@yahoo.com">ibt.valentin@yahoo
+      <section id="contact">
+        <h1>Contact</h1>
+        <p>Email : <a href="mailto:ibt.valentin@yahoo.com">ibt.valentin@yahoo.com</a></p>
+        <p>Téléphone : 0651669187</p>
+        <p>LinkedIn : <a href="https://www.linkedin.com/in/ibtvalentin" target="_blank">www.linkedin.com/in/ibtvalentin</a></p>
+        <p>Portfolio : <a href="https://irie-valentin.github.io/portfolio/" target="_blank">irie-valentin.github.io/portfolio</a></p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Valentin IRIE - Portfolio</p>
+  </footer>
+</body>
+</html>
